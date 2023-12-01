@@ -14,13 +14,15 @@ const CreateTodo: React.FC<Props> = ({ onSaveTodo }) => {
   }
   return (
     <form onSubmit={handleSubmit}>
-        <input className='new-todo'
+      <input
+        className="new-todo"
         value={inputValue}
         onChange={(event) => {
           setInputValue(event.target.value)
         }}
-        placeholder='¿Qué quieres hacer?'
-        autoFocus />
+        placeholder="What needs to be done?"
+        autoFocus
+      />
     </form>
   )
 }
